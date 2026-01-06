@@ -1,22 +1,23 @@
-Sales Performance Analysis: End-to-End Data Pipeline
-📋 Project Overview
+# Sales Performance Analysis: 
+End-to-End Data Pipeline
+## 📋 Project Overview
 This project demonstrates a full-scale data analysis workflow—from raw data ingestion and cleaning to executive-level visualization. Using a large-scale sales dataset across three relational tables, I acted as a Data Analyst to identify trends, optimize sales processes, and answer key business questions regarding profitability and customer behavior.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 Database: SQL (Data Cleaning, Transformation, and Aggregation)
 
 Visualization: Tableau (Interactive Dashboarding)
 
-Documentation: GitHub (Version Control)
+Documentation: GitHub (Version Control) & drow io 
 
-🗂️ Data Architecture
+## 🗂️ Data Architecture
 The project utilizes three core relational tables:
 
-Orders Table: Transactional data (Order ID, Date, Product ID, Sales Amount).
+Sales Table: Transactional data (sales ID, Date, Product ID, unit price , quantity ).
 
-Products Table: Metadata (Product Category, Sub-category, Cost).
+Products Table: Metadata (Product id, product name, Cost , supplier).
 
-Customers Table: Demographics and segment information.
+Inventory Table: store and location information .
 
 🏗️ Phase 1: Data Cleaning & Exploration (SQL)
 Because the dataset exceeded the capacity of standard spreadsheet tools, I utilized SQL for efficient processing.
