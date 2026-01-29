@@ -1,10 +1,26 @@
-# Sales Performance Analysis: 
+# Sales analysis performance : 
 End-to-End Data Pipeline
-## 📋 Project Overview
-This project demonstrates a full-scale data analysis workflow—from raw data ingestion and cleaning to executive-level visualization. Using a large-scale sales dataset across three relational tables, I acted as a Data Analyst to identify trends, optimize sales processes, and answer key business questions regarding profitability and customer behavior.
+## 📋 Project Overview 
+This project focuses exclusively on sales data and analyzes performance metrics to identify trends, top-performing products, revenue contribution, and profitability. The goal is to support data-driven business decisions through SQL analysis and interactive dashboards.
+
+ ## Business Objectives :
+-- Analyze Overall Performance : Evaluate comprehensive sales and profit performance across all business operations.
+__ Year-over-Year Analysis : Compare sales and profit differences between the current year and previous year to measure growth trends.
+-- Calculate Total Quantity Sold  and analyze Product Distribution to examine how products are distributed by quantity sold.
+-- Create Product Segmentation to categorize based on quantity sold to get the most top product sold 
+-- Identify Top Performers
+
+## Data set description:
+The data contains 3 tables : 
+1. Sales
+2. Products
+3. Inventory
+   ### Refer to this image for a detailed description of all columns, rows, and data models.
+   image link 
+
 
 ## 🛠️ Tech Stack
-Database: SQL (Data Cleaning, Transformation, and Aggregation)
+Database : postgreSQL (Data Cleaning, Transformation, and Aggregation) 
 
 Visualization: Tableau (Interactive Dashboarding)
 
