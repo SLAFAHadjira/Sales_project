@@ -19,7 +19,7 @@ The data contains 3 tables :
                  - product_id , product_name , coast , supplier 
 3. Inventory : information about store and locations
    ### Refer to this image for a detailed description of all columns, rows, and data models.
-   image link 
+  [images/Data documentation.drawio.png]
 
 
 ## 🛠️ Tech Stack
