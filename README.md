@@ -9,7 +9,7 @@ This project focuses exclusively on sales data and analyzes performance metrics 
 - Year-over-Year Analysis : Compare sales and profit differences between the current year and previous year to measure growth trends.
 - Calculate Total Quantity Sold  and analyze Product Distribution to examine how products are distributed by quantity sold.
 - Create Product Segmentation to categorize based on quantity sold to get the most top product sold 
-- Identify Top Performers
+- Identify Top product Performers
 
 ## Data set description:
 The data contains 3 tables : 
@@ -18,6 +18,7 @@ The data contains 3 tables :
 2. Products : all details about products
                  - product_id , product_name , coast , supplier 
 3. Inventory : information about store and locations
+                - Store_id , product_id, Store_name , Address , neighbrhood , Quantity_available
    ### Refer to this image for a detailed description of all columns, rows, and data models.
  ![image.alt](https://raw.githubusercontent.com/SLAFAHadjira/Sales_project/f5d5e78754139b7aad2f076d0a07e7661e874d06/images/all%20tables%20.jpg)
 
@@ -256,7 +257,8 @@ group by product_name
 order by COUNT(product_id) desc ;
 ```
 
-Create gold layer 
+Create gold layer  
+The objective is to create a fact table get all fields needes for analysis 
 ```
 --Create a gold layer schema to make the table analysis-ready
 CREATE SCHEMA Gold ;
@@ -317,11 +319,30 @@ SELECT
 	s.Date		 ,
 	s.Unit_Price	,	
 	s.Quantity	
-	
+
+
+
+
 FROM silver.sales  s
 LEFT JOIN gold.store_name st 
 ON s.store_id = st.store_id
 LEFT JOIN silver.product p 
 ON s.product_id = p.product_id ;
 ```
+
+
+## Phase 2 : Analysis Phase 
+1. Data connection : connect sales data into Tableau
+2. create calculate fialds ;
+   * Total Sales 
+   * Total profit
+   * Total quantity Sold
+   * Total Sales Current Year
+   * Total Sales Previous Year
+   * Total Profit Current Year
+   * Total Profit Previous Year
+   * % of YOY Grouth
+3. Dashoard Creation
+link of the dashbord below
+
 
